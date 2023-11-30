@@ -354,9 +354,89 @@ try {
 
                 }
             }
+            try {
+                document.getElementsByClassName('Row__title-inner')[0].getElementsByClassName('Row__title')[0].innerText="Your Balance in Gruxx"
+            } catch (error) {
+                
+            }
+            try {
+    
+                const mainClass = document.getElementsByClassName('CurrencyOverview');
+                for(var i=0;i<mainClass.length;i++){
+                    if(mainClass[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('src')=='img/Etherum.svg'){
+                        mainClass[i].getElementsByClassName('CurrencyOverview__caption-title')[0].innerText = 'Desposit ETH';
+                        // mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByClassName('Value__symbol')[0].innerText='ETH';
+                        mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByTagName('p')[0].innerText='ETH Reserve Overview';
+                        mainClass[i].getElementsByClassName('Row__content')[1].getElementsByClassName('Value__value')[0].innerText="6148.50 - ETH";
+                        mainClass[i].getElementsByClassName('Row__content')[4].getElementsByClassName('Value__value')[0].innerText="6148.50";
+                        
+                    }
+                    if(mainClass[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('src')=='img/bitcoin.svg'){
+                        mainClass[i].getElementsByClassName('CurrencyOverview__caption-title')[0].innerText = 'Desposit BTC.B';
+                        // mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByClassName('Value__symbol')[0].innerText='ETH';
+                        mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByTagName('p')[0].innerText='BTC.B Reserve Overview';
+                        // mainClass[i].getElementsByClassName('Row__content')[1].getElementsByClassName('Value__value')[0].innerText="5680.95 - BTC.B";
+                        mainClass[i].getElementsByClassName('Row__content')[4].getElementsByClassName('Value__value')[0].innerText="37K";
+                        
+                    }
+                    if(mainClass[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('src')=='img/USDT.svg'){
+                        mainClass[i].getElementsByClassName('CurrencyOverview__caption-title')[0].innerText = 'Desposit USDT';
+                        // mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByClassName('Value__symbol')[0].innerText='ETH';
+                        mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByTagName('p')[0].innerText='USDT Reserve Overview';
+                        mainClass[i].getElementsByClassName('Row__content')[1].getElementsByClassName('Value__value')[0].innerText="204.06 - USDT";
+                        mainClass[i].getElementsByClassName('Row__content')[4].getElementsByClassName('Value__value')[0].innerText="1.02";
+                        
+                    }
+                    if(mainClass[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('src')=='img/DAI.svg'){
+                        mainClass[i].getElementsByClassName('CurrencyOverview__caption-title')[0].innerText = 'Desposit DAI';
+                        // mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByClassName('Value__symbol')[0].innerText='ETH';
+                        mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByTagName('p')[0].innerText='DAI Reserve Overview';
+                        mainClass[i].getElementsByClassName('Row__content')[1].getElementsByClassName('Value__value')[0].innerText="3780 - DAI";
+                        mainClass[i].getElementsByClassName('Row__content')[4].getElementsByClassName('Value__value')[0].innerText="0.998";
+                        
+                    }
+                    if(mainClass[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('src')=='img/SAVAX.svg'){
+                        mainClass[i].getElementsByClassName('CurrencyOverview__caption-title')[0].innerText = 'Desposit SAVAX';
+                        // mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByClassName('Value__symbol')[0].innerText='ETH';
+                        mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByTagName('p')[0].innerText='SAVAX Reserve Overview';
+                        mainClass[i].getElementsByClassName('Row__content')[1].getElementsByClassName('Value__value')[0].innerText="1197 - SAVAX";
+                        mainClass[i].getElementsByClassName('Row__content')[4].getElementsByClassName('Value__value')[0].innerText="23";
+                        
+                    }
+                    if(mainClass[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('src')=='img/WETH.svg'){
+                        mainClass[i].getElementsByClassName('CurrencyOverview__caption-title')[0].innerText = 'Desposit WETH';
+                        // mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByClassName('Value__symbol')[0].innerText='ETH';
+                        mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByTagName('p')[0].innerText='WETH Reserve Overview';
+                        mainClass[i].getElementsByClassName('Row__content')[1].getElementsByClassName('Value__value')[0].innerText="204.06 - WETH";
+                        mainClass[i].getElementsByClassName('Row__content')[4].getElementsByClassName('Value__value')[0].innerText="2048";
+                        
+                    }
+
+                    if(mainClass[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('src')=='img/USDC.svg'){
+                        mainClass[i].getElementsByClassName('CurrencyOverview__caption-title')[0].innerText = 'Desposit USDC';
+                        // mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByClassName('Value__symbol')[0].innerText='ETH';
+                        mainClass[i].getElementsByClassName('CurrencyOverview__captionLink')[0].getElementsByTagName('p')[0].innerText='USDC Reserve Overview';
+                        mainClass[i].getElementsByClassName('Row__content')[1].getElementsByClassName('Value__value')[0].innerText="4282.99 - USDC";
+                        mainClass[i].getElementsByClassName('Row__content')[4].getElementsByClassName('Value__value')[0].innerText="1";
+                        
+                    }
 
 
-        }, 50)
+
+
+                }
+            
+            
+            
+            
+            } catch (error) {
+                
+            }
+
+
+
+
+        }, 1)
 
 });
 
